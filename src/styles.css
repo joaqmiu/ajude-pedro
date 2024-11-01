@@ -28,6 +28,7 @@ h1 {
     height: 80vw;
     max-width: 600px;
     max-height: 600px;
+    perspective: 1000px;
 }
 
 .bloco {
@@ -36,7 +37,8 @@ h1 {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    transform-style: preserve-3d;
 }
 
 #pedro img, #escola img {
@@ -44,6 +46,16 @@ h1 {
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
+    transform: translateZ(15px);
+    transition: transform 0.3s ease;
+}
+
+#pedro {
+    transform: translateZ(20px);
+}
+
+#escola {
+    transform: translateZ(20px);
 }
 
 #pergunta-container {
@@ -65,11 +77,12 @@ h1 {
     background-color: #333;
     color: #ffffff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .alternativa:hover {
     background-color: #444;
+    transform: translateZ(10px);
 }
 
 .correta {
@@ -84,10 +97,31 @@ footer {
     display: flex;
     align-items: center;
     color: #ffffff;
+    margin-top: 20px;
 }
 
 .imagem-rodape {
     width: 50px;
     height: auto;
     margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    #mapa {
+        width: 90vw;
+        height: 90vw;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    #pergunta-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #mapa {
+        grid-template-columns: repeat(16, 20px);
+        grid-template-rows: repeat(16, 20px);
+    }
 }
