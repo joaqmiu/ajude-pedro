@@ -1,5 +1,9 @@
 # Aviso
-- Isto é, somente uma versão de demonstração, por isso a simplicidade no funcionamento do "jogo" e a facilidade das perguntas.
+- Isto é, somente uma versão de demonstração, por isso a simplicidade no funcionamento do "jogo" e a facilidade das perguntas. Noss ideia é fazer algo parecido: o jogador avança quando acerta e regride quando erra.
+- Nosso intuito com isso é abranger um público maior.
+- Este projeto foi feito usando o framework Node.JS, HTML e CSS, mas planejo migrar para Python na versão final.
+
+# Explicação [ /src/script.js ]
 
 1. **Declaração de Variáveis:**
 
