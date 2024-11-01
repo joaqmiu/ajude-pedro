@@ -1,3 +1,6 @@
+# Aviso
+- Isto é, somente uma versão de demonstração, por isso a simplicidade no funcionamento do "jogo" e a facilidade das perguntas.
+
 1. **Declaração de Variáveis:**
 
     ```javascript
